@@ -1,0 +1,28 @@
+<<<<<<< HEAD
+*,::after,::before{
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: 0;
+}
+/* a,p{
+    color: white;
+=======
+*,::after,::before{
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: 0;
+}
+/* a,p{
+    color: white;
+>>>>>>> 67049eb61ca99365707eac308a70cb87a5db9d6d
+} */
