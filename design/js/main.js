@@ -11,7 +11,7 @@ var posi2 = sect.offsetTop;
 var loader = document.querySelector('.loader');
 
 window.addEventListener('load', ()=>{
-    loader.style.visibility =  "visible";
+    loader.style.visibility =  "hidden";
 })
 
 window.addEventListener('scroll', () => {

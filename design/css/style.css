@@ -221,7 +221,7 @@ body {
     top: 0;
     z-index: 200000000;
     opacity: .7;
-    visibility: hidden;
+    visibility: visible;
 }
 .loader .load{
     display: flex;
