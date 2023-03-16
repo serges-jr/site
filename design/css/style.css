@@ -11,6 +11,7 @@ body {
     padding: 0;
     width: 100%;
     min-height: 100vh;
+    position: relative;
     overflow-x: hidden;
 }
 
@@ -210,6 +211,75 @@ body {
     color: white;
 }
 
+/* loading */
+
+.loader{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    z-index: 200000000;
+    opacity: .7;
+    visibility: hidden;
+}
+.loader .load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20% auto;
+}
+.load div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #27ae60;
+    animation: ros 1.2s linear infinite;
+    margin: 5px;
+}
+.load div:first-child{
+    background-color: red;
+    animation-delay: 0.2s;
+}
+.load div:nth-child(2){
+
+    animation-delay: 0.4s;
+}
+.load div:nth-child(3){
+    background-color: blue;
+    animation-delay: 0.6s;
+}
+.load div:nth-child(4){
+    background-color: aqua;
+    animation-delay: 0.8s;
+}
+.load div:last-child{
+    background-color: yellow;
+    animation-delay: 1s;
+}
+
+@keyframes ros {
+    0%{
+        transform: translateY(0);
+        transition: .1s;
+    }
+    25%{
+        transform: translateY(-10px);
+        transition: .1s;
+    }
+    50%{
+        transform: translateY(-15px);
+        transition: .1s;
+    }
+    75%{
+        transform: translateY(-20px);
+        transition: .1s;
+    }
+    100%{
+        transform: translateY(0);
+        transition: .1s;
+    }
+}
 
 
 /* baniere */

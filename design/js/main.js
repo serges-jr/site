@@ -8,6 +8,12 @@ var posi = nav.offsetTop;
 var sect = document.querySelectorAll(".sect1");
 var posi2 = sect.offsetTop;
 
+var loader = document.querySelector('.loader');
+
+window.addEventListener('load', ()=>{
+    loader.style.visibility =  "visible";
+})
+
 window.addEventListener('scroll', () => {
     if (window.scrollY >= posi) {
         nav.classList.add('fixed');
@@ -34,3 +40,7 @@ nav.addEventListener("mouseout", () => {
     ancre.classList.remove('see');
     lien.classList.remove('see');
 })
+
+
+
+
